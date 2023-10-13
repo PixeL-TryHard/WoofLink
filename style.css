@@ -1,0 +1,203 @@
+/* Reset some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #3498db, #ff6f61);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff422d;
+}
+
+/* Content section styling */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.post h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.post p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.post button {
+    background: linear-gradient(135deg, #ff6f61, #ff422d);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.post button:hover {
+    background: linear-gradient(135deg, #ff422d, #ff1900);
+}
+
+/* Aside (Chat or Friends) styling */
+aside {
+    flex: 1;
+    padding: 20px;
+}
+
+.chat-list, .friend-list {
+    list-style: none;
+}
+
+.contact, .friend-profile {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact img, .friend-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.contact img:hover, .friend-profile img:hover {
+    transform: scale(1.1);
+}
+
+.contact p, .friend-profile p {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.contact:hover p, .friend-profile:hover p {
+    color: #ff6f61;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #3498db, #ff6f61);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for Messages page */
+.message-list h2, .message-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.message-list ul {
+    list-style: none;
+}
+
+.message-list li a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.message-list li a:hover {
+    color: #ff6f61;
+}
+
+.message-list img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.message-list img:hover {
+    transform: scale(1.1);
+}
+
+.message-content .message-thread {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-content .message-thread li {
+    margin: 10px 0;
+}
+
+.message-content .message-thread .sent {
+    background: linear-gradient(135deg, #3498db, #ff6f61);
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    float: right
